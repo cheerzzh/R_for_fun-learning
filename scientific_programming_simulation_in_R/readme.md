@@ -6,6 +6,7 @@ INTRODUCTION TO Scientific Programming and Simulation Using R
 *BY Owen Jones, Robert Maillardet, and Andrew Robinson*
 
 **Skip Ch1~9 for basic R introduction** 
+
 **Skip Ch13~16 for basic introduction in statistics**
 
 ##Focus
