@@ -15,3 +15,6 @@ The double precision scheme we have described here is part of the IEEE Standard 
 
 **.Machine** will give you details about your local numerical environment.
 
+operations are tasks such as addition, multiplication, logical comparison, variable assignment, and calling built-in functions.
+
+
