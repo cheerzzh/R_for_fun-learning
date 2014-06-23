@@ -41,7 +41,13 @@ ftn1 <- function(x) return(exp(exp(-x)))
 a <- fixedpoint(ftn1, 2, tol = 1e-06)
 ftn1(a) # should = a
 
+ftn2 <- function(x) return(x - log(x) + exp(-x)) 
+fixedpoint(ftn2, 2, tol = 1e-06)
 
+
+#this will fail to converge
+ftn3 <- function(x) return(x + log(x) - exp(-x))
+fixedpoint(ftn3, 2, tol = 1e-06, max.iter = 20)
 
 
 
