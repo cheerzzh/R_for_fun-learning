@@ -1,4 +1,6 @@
-R-bloggers
+R learning
 ==========
 
-codes for articles and tutorials from R-bloggers
+codes for articles, tutorials and textbooks from various sources.
+
+
