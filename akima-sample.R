@@ -26,8 +26,8 @@ rgl.surface(akima.li$x,akima.li$y,akima.li$z,color="green",alpha=c(0.5))
 
 # interpp:
 akima.p <- interpp(akima$x, akima$y, akima$z,
-	runif(200,min(akima$x),max(akima$x)),
-	runif(200,min(akima$y),max(akima$y)))
+	runif(20,min(akima$x),max(akima$x)),
+	runif(20,min(akima$y),max(akima$y)))
 # interpp points:
 rgl.points(akima.p$x,akima.p$z , akima.p$y,size=4,color="yellow")
 rgl.bbox()
@@ -51,7 +51,7 @@ rgl.surface(akima.si$x,akima.si$y,akima.si$z,color="green",alpha=c(0.5))
 akima.sp <- interpp(akima$x, akima$y, akima$z,
 	runif(20,min(akima$x),max(akima$x)),
 	runif(20,min(akima$y),max(akima$y)),
-linear = FALSE, extrap = TRUE)
+	linear = FALSE, extrap = TRUE)
 # interpp points:
 rgl.points(akima.sp$x,akima.sp$z , akima.sp$y,size=4,color="blue")
 
