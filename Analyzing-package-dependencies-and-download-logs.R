@@ -4,9 +4,7 @@
 # (3) building an R recommendation engine
 
 
-
-
-
-
-
+# ====================
+# PART I
+# Investigating dependency relationships among available R packages in CRAN
 
