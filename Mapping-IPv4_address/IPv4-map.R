@@ -63,8 +63,14 @@ print(finalgeo)
 
 # Explore the data
 # distribution of the counts look like
-
-
+library(scales)
+gg <- ggplot(finalgeo, aes(x=ipcount))
+gg <- gg + geom_density(fill="slateblue")
+gg <- gg + scale_x_log10("Addresses per Block", expand=c(0,0), breaks = trans_breaks("log10", function(x) 10^x), labels = trans_format("log10", math_format(10^.x)))
+gg<- gg + scale_y_continuous("Density", expand=c(0,0))
+gg <- gg + ggtitle("Density of Lat/Long IP Blocks")
+gg <- gg + theme(axis.ticks=element_blank(), panel.grid=element_blank(), panel.background=element_rect(color=NA, fill=NA))
+print(gg)
 
 
 
